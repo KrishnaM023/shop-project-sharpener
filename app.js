@@ -20,8 +20,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/admin', adminRoutes);
 app.use(shopRoutes);
-app.use('/contact', contactRoutes)
-app.use('/success', successRoutes);
+//app.use('/contact', contactRoutes)
+//app.use('/success', successRoutes);
 
 app.use(errorControllers.get404);
 
